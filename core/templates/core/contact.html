@@ -1,0 +1,56 @@
+{% extends "core/base.html" %}
+
+{% block content %}
+
+  <div class="container mt-5">
+    <h1 class="text-warning mb-5 border-bottom">CONTACT US</h1>
+
+    <div class="row text-white">
+      <div class="col-md-8 mb-4">
+
+          <div class="form-group">
+            <label for="yourName">Your Name</label>
+            <input type="text" class="form-control" id="yourName" name="your_name" required>
+          </div>
+
+          <div class="form-group">
+            <label for="yourEmail">Your Email</label>
+            <input type="email" class="form-control" id="yourEmail" name="your_email" required>
+          </div>
+
+          <div class="form-group">
+            <label for="yourSubject">Your Subject</label>
+            <input type="text" class="form-control" id="yourSubject" name="your_subject" required>
+          </div>
+
+          <div class="form-group">
+            <label for="yourMessage">Your Message</label>
+            <textarea class="form-control" id="yourMessage" name="your_message" rows="5" required></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-warning">Submit</button>
+        </form>
+      </div>
+
+      <div class="col-md-4">
+        <!-- Contact Information -->
+        <h4 class="mb-4">Contact Information</h4>
+        
+        <p><i class="fas fa-map-marker-alt"></i> Kanpur, India</p>
+        <p><i class="fas fa-phone"></i> +91 7905585909</p>
+        <p><i class="far fa-envelope"></i> <a href="mailto:abhi@gmail.com">abhi@gmail.com</a></p>
+        
+        <!-- Social Media Links -->
+        <div class="text-center mt-4">
+          <h4 class="mb-4">Follow Us</h4>
+          <ul class="list-inline">
+            <li class="list-inline-item"><a href="https://twitter.com/example" target="_blank"><i class="fab fa-twitter"></i></a></li>
+            <li class="list-inline-item"><a href="https://instagram.com/example" target="_blank"><i class="fab fa-instagram"></i></a></li>
+            <li class="list-inline-item"><a href="https://facebook.com/example" target="_blank"><i class="fab fa-facebook"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+{% endblock content %}

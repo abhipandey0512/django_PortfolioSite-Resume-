@@ -1,0 +1,78 @@
+{% extends "core/base.html" %}
+
+{% block content %}
+<style>
+  html, body {
+    height: 100%;
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+
+    color: white; /* Set text color to white for better contrast */
+  }
+
+  .container {
+    min-height: 100%;
+  }
+</style>
+
+<div class="container mt-5">
+  <h1 class="text-warning mb-5 border-bottom">SKILLS</h1>
+
+  <div class="row text-white">
+    <div class="col-sm-5">
+      <h3>HTML/CSS</h3>
+      <div class="progress">
+        <div class="progress-bar bg-danger" role="progressbar" style="width: 90%"
+          aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">90%</div>
+      </div>
+    </div>
+
+    <div class="col-sm-5 offset-sm-2">
+      <h3>Python</h3>
+      <div class="progress">
+        <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
+          style="width: 70%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">70%</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row text-white mt-3">
+    <div class="col-sm-5">
+      <h3>Django</h3>
+      <div class="progress">
+        <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
+          style="width: 65%" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100">65%</div>
+      </div>
+    </div>
+
+    <div class="col-sm-5 offset-sm-2">
+      <h3>AI/ML</h3>
+      <div class="progress">
+        <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
+          style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">60%</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row text-white mt-3">
+    <div class="col-sm-5">
+      <h3>SQL</h3>
+      <div class="progress">
+        <div class="progress-bar progress-bar-striped bg-warning" role="progressbar" style="width: 65%"
+          aria-valuenow="65" aria-valuemin="0" aria-valuemax="100">65%</div>
+      </div>
+    </div>
+
+    <div class="col-sm-5 offset-sm-2">
+      <h3>TensorFlow</h3>
+      <div class="progress">
+        <div class="progress-bar progress-bar-striped progress-bar-animated bg-danger" role="progressbar"
+          style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">80%</div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock content %}

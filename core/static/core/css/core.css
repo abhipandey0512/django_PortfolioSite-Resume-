@@ -1,0 +1,13 @@
+html, body {
+    height: 100%;
+  }
+  
+  body {
+    margin: 100;
+    padding: 100;
+  }
+  
+  .container-fluid {
+    max-height: 100%;
+  }
+  
